@@ -5,10 +5,21 @@
   "entry point": "index.js",
   "scripts": {
     "start": "node index.js",
+    "build": "babel . -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["game"],
+  "keywords": [
+    "game"
+  ],
   "author": "felhan",
   "license": "ISC",
-  "description": "Browser based game"
+  "description": "Browser based game",
+  "devDependencies": {
+    "@babel/cli": "^7.24.6",
+    "@babel/core": "^7.24.6",
+    "@babel/preset-env": "^7.24.6"
+  },
+  "dependencies": {
+    "core-js": "^3.37.1"
+  }
 }
