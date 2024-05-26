@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "build": "babel . -d dist",
+    "lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -17,7 +18,10 @@
   "devDependencies": {
     "@babel/cli": "^7.24.6",
     "@babel/core": "^7.24.6",
-    "@babel/preset-env": "^7.24.6"
+    "@babel/preset-env": "^7.24.6",
+    "@eslint/js": "^9.3.0",
+    "eslint": "^9.3.0",
+    "globals": "^15.3.0"
   },
   "dependencies": {
     "core-js": "^3.37.1"
